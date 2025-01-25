@@ -43,12 +43,12 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   addButton.addEventListener("click", function () {
-    addTask(taskInput.value);
+    addTask(taskInput.value.trim());
   });
 
   taskInput.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      addTask(taskInput.value);
+      addTask(taskInput.value.trim());
     }
   });
 
